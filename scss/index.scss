@@ -1,0 +1,175 @@
+ // Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$dark:#2b2c2c;
+// $dark:white;
+// $light:black;
+$primary:#3c3c3c;
+// $primary:rgb(152, 152, 152);
+$danger:#3a86ff;
+$warning:#feb633;
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Then add additional custom code here
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.button-one-css{
+    width: 150px;
+    transition: 0.7s;
+  }
+  .button-one-css:hover{
+    width: 200px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+  }
+  h1{
+    font-weight: bolder;
+  }
+  // services
+  .Services-css-one{
+    background: rgb(102,168,255);
+background: linear-gradient(90deg, rgba(102,168,255,1) 0%, rgba(64,146,255,1) 50%, rgba(36,121,233,1) 100%);
+width: 500px;
+height: 300px;
+  }
+  .Services-css-two{
+    width: 500px;
+height: 300px;
+background: rgb(234,194,37);
+background: linear-gradient(90deg, rgba(234,194,37,1) 0%, rgba(234,179,37,1) 50%, rgba(225,147,30,1) 100%);
+  }
+
+  @media screen and (max-width: 965px){
+.project-align-css{
+text-align: center;
+}
+.project-align-css img{
+  margin: auto;
+  }
+  header img{
+    padding-top: 50px;
+    margin: auto;
+  }
+  header{
+    padding-top: 60px;
+  }
+  header i{
+    padding-top: 50px;
+  }
+
+.img-mobile{
+  margin: auto;
+}
+
+
+  .popup{
+    width: 250px;
+    height: 150px;
+    background-color: $warning;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    top: 0%;
+    left: 50%;
+    position: absolute;
+    padding: 5px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+  .popup_visibal{
+    top: 50%;
+    visibility: visible;
+  }
+  .popup h2{
+    margin-left: -8px;
+    padding-bottom: 5px;
+  }
+  .popup img{
+    width: 40px;
+    margin-top: -1500px;
+  }
+
+
+  .btn10{
+    background-color: rgb(1, 159, 1);
+    appearance: button;
+    color: white;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    border-width: 0;
+    cursor: pointer;
+    font-size: 100%;
+    height: 34px;
+    outline: none;
+    position: relative;
+    text-align: center;
+    width: 100px;
+    margin-left: 10px;
+  }
+  .mobile-css-icons{
+    margin-top: -50px;
+    margin-bottom: -10px;
+  }
+}
+
+
+ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: $warning;
+  display: block;
+  // margin: auto;
+  transition: 0.5s;
+}
+ul li:hover::after {
+  width:100%;
+}
+.popup{
+  width: 650px;
+  height: 350px;
+  background-color: $warning;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  top: 0%;
+  left: 50%;
+  position: absolute;
+  padding: 30px;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.popup_visibal{
+  top: 50%;
+  visibility: visible;
+}
+.popup h2{
+  margin-left: -8px;
+  padding-bottom: 10px;
+}
+.popup img{
+  width: 100px;
+  margin-top: -80px;
+}
+.btn10{
+  margin-top: 20px;
+  background-color: rgb(1, 159, 1);
+  appearance: button;
+  color: white;
+  backface-visibility: hidden;
+  border-radius: 6px;
+  border-width: 0;
+  cursor: pointer;
+  font-size: 100%;
+  height: 44px;
+  outline: none;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  margin-left: 10px;
+}
